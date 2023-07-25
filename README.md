@@ -1,17 +1,25 @@
-# iconify-dark
+# iconify-dark (wip)
 
-A little proxy with injecting `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg:
+A tiny proxy to inject `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg,
+which makes svg color to adapt to system theme setting when it's used as browser tab favicon.
 
-```html
-<style>
-  :root { color: black }
-  @media (prefers-color-scheme: dark) {
-    :root { color: white }
-  }
-</style>
+## example
+
+```sh
+curl https://iconify-dark-hiro18181.vercel.app/icon?name=ri-code-s-slash-line
 ```
 
-This allows automatically changing browser tab icons based on system dark mode settings.
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style>
+    :root { color: black }
+    @media (prefers-color-scheme: dark) {
+      :root { color: white }
+    }
+  </style>
+  <path fill="currentColor" d="m24 12l-5.657 5.657l-1.414-1.414L21.172 12l-4.243-4.243l1.414-1.414L24 12ZM2.828 12l4.243 4.243l-1.414 1.414L0 12l5.657-5.657L7.07 7.757L2.828 12Zm6.96 9H7.66l6.552-18h2.128L9.788 21Z"/>
+</svg>
+```
 
 ## development
 
@@ -26,7 +34,7 @@ pnpm preview
 
 # build for vercel edge (see misc/vercel-edge/README.md)
 pnpm build-vercel-edge
-pnpm release
+pnpm release-production
 ```
 
 ## references

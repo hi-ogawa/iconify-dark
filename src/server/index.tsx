@@ -70,11 +70,11 @@ function render({
       <StaticRouterProvider
         router={createStaticRouter(
           routerResult.handler.dataRoutes,
-          routerResult.context
+          routerResult.context,
         )}
         context={routerResult.context}
       />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 }
 

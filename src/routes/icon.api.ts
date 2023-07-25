@@ -2,7 +2,7 @@ import { RequestContext } from "@hattip/compose";
 import { z } from "zod";
 import { tinyassert, splitFirst } from "@hiogawa/utils";
 
-// curl http://localhost:5173/icon?name=ri-code-s-slash-line
+// TODO: caching
 
 const Z_PARAMS = z.object({
   name: z.string(),
@@ -13,7 +13,7 @@ export async function get(ctx: RequestContext) {
     Object.fromEntries(ctx.url.searchParams.entries()),
   );
   const data = await fetchIconData(params.name);
-  const result = `
+  const result = `\
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${data.meta.width} ${data.meta.height}">
   <style>
     :root { color: black }
