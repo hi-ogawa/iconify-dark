@@ -1,9 +1,14 @@
 # iconify-dark
 
-A tiny proxy to inject `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg,
-which makes icon color to adapt to system theme setting, for example, when it's used as a browser tab favicon.
+A tiny proxy to inject `prefers-color-scheme` to [iconify](https://github.com/iconify) svg.
+It can be convenient to automatically change favicon color in a browser tab by system-wide dark mode settings.
 
 ## example
+
+| iconify                                                                                    | iconify-dark                                                                                               |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| `<img width="40" height="40" src="https://api.iconify.design/ri/code-s-slash-line.svg" />` | `<img width="40" height="40" src="https://iconify-dark-hiro18181.vercel.app/icon/ri/code-s-slash-line" />` |
+| <img width="40" height="40" src="https://api.iconify.design/ri/code-s-slash-line.svg" />   | <img width="40" height="40" src="https://iconify-dark-hiro18181.vercel.app/icon/ri/code-s-slash-line" />   |
 
 ```sh
 curl https://iconify-dark-hiro18181.vercel.app/icon/ri/code-s-slash-line
