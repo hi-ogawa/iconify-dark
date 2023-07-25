@@ -1,12 +1,12 @@
-# iconify-dark (wip)
+# iconify-dark
 
 A tiny proxy to inject `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg,
-which makes svg color to adapt to system theme setting when it's used as browser tab favicon.
+which makes icon color to adapt to system theme setting, for example, when it's used as a browser tab favicon.
 
 ## example
 
 ```sh
-curl https://iconify-dark-hiro18181.vercel.app/icon?name=ri-code-s-slash-line
+curl https://iconify-dark-hiro18181.vercel.app/icon/ri/code-s-slash-line
 ```
 
 ```xml
@@ -36,3 +36,8 @@ pnpm preview
 pnpm build-vercel-edge
 pnpm release-production
 ```
+
+## references
+
+- iconify api https://iconify.design/docs/api/icon-data.html
+- project template https://github.com/hi-ogawa/vite-plugins
