@@ -1,7 +1,7 @@
-# iconify-dark (wip)
+# iconify-dark
 
 A tiny proxy to inject `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg,
-which makes svg color to adapt to system theme setting when it's used as browser tab favicon.
+which makes icon color to adapt to system theme setting, for example, when it's used as a browser tab favicon.
 
 ## example
 
