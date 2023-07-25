@@ -24,6 +24,8 @@ export const get: RequestHandler = async (ctx) => {
   return new Response(result, {
     headers: {
       "content-type": "image/svg+xml",
+      // always revalidate
+      "cache-control": "public, s-max-age=0, stale-while-revalidate=31536000",
     },
   });
 };
