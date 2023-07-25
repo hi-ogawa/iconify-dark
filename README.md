@@ -36,7 +36,3 @@ pnpm preview
 pnpm build-vercel-edge
 pnpm release-production
 ```
-
-## references
-
-- https://iconify.design/docs/api/icon-data.html

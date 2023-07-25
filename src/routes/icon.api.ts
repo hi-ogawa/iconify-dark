@@ -1,6 +1,6 @@
-import { RequestContext } from "@hattip/compose";
+import { type RequestContext } from "@hattip/compose";
+import { splitFirst, tinyassert } from "@hiogawa/utils";
 import { z } from "zod";
-import { tinyassert, splitFirst } from "@hiogawa/utils";
 
 // TODO: caching
 
@@ -30,6 +30,10 @@ export async function get(ctx: RequestContext) {
     },
   });
 }
+
+//
+// iconify api https://iconify.design/docs/api/icon-data.html
+//
 
 const Z_ICONIFY_JSON = z
   .object({
