@@ -31,4 +31,4 @@ pnpm release
 
 ## references
 
-- https://iconify.design/docs/api/
+- https://iconify.design/docs/api/icon-data.html
