@@ -1,12 +1,21 @@
-# examples/ssr
+# iconify-dark
 
-https://vite-plugins-example-ssr-hiro18181.vercel.app/
+A little proxy with injecting `prefers-color-scheme` to [iconify](https://github.com/iconify)'s svg:
+
+```html
+<style>
+  :root { color: black }
+  @media (prefers-color-scheme: dark) {
+    :root { color: white }
+  }
+</style>
+```
+
+This allows automatically changing browser tab icons based on system dark mode settings.
+
+## development
 
 ```sh
-# initial setup
-bash misc/init.sh
-pnpm update
-
 # development
 pnpm i
 pnpm dev
@@ -20,6 +29,6 @@ pnpm build-vercel-edge
 pnpm release
 ```
 
-## sample projects
+## references
 
-- https://github.com/hi-ogawa/vite-plugins/blob/a06abb8eb3cfc2802ccc9082707fe8a66699c254/packages/demo/README.md#L2-L6
+- https://iconify.design/docs/api/

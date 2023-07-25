@@ -4,8 +4,8 @@ misc script for vercel deployment
 
 ```sh
 # initial project setup
-vercel projects add vite-plugins-example-ssr-hiro18181
-vercel link -p vite-plugins-example-ssr-hiro18181
+vercel projects add iconify-dark-hiro18181
+vercel link -p iconify-dark-hiro18181
 ```
 
 ## references
