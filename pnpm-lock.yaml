@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.4.2-pre.15
     version: 1.4.2-pre.15
   '@hiogawa/vite-glob-routes':
-    specifier: ^0.4.0
-    version: 0.4.0(@hattip/compose@0.0.34)(@types/react@18.2.16)(react-router-dom@6.14.2)(vite@4.4.7)
+    specifier: ^0.5.0
+    version: 0.5.0(@hattip/compose@0.0.34)(@types/react@18.2.16)(react-router-dom@6.14.2)(vite@4.4.7)
   '@hiogawa/vite-import-index-html':
     specifier: ^0.3.0
     version: 0.3.0(vite@4.4.7)
@@ -550,8 +550,8 @@ packages:
     resolution: {integrity: sha512-xmtMIyYasg92WGwA8Vk7gVRntsuTfpYX7bPy3nZvUGzaRHM2DxuKJF5oH7ZhI+MGR6E8dWFMEZ5rgyjPW3lMGw==}
     dev: true
 
-  /@hiogawa/vite-glob-routes@0.4.0(@hattip/compose@0.0.34)(@types/react@18.2.16)(react-router-dom@6.14.2)(vite@4.4.7):
-    resolution: {integrity: sha512-fZO3GFk9bT5Rg9Y2yYI6a9c8EMTvhNbkU6AqzoJRSLbbOGjkSRDgESVZpV10E2ucVx+i4miUzJK6Mn12yeei5g==}
+  /@hiogawa/vite-glob-routes@0.5.0(@hattip/compose@0.0.34)(@types/react@18.2.16)(react-router-dom@6.14.2)(vite@4.4.7):
+    resolution: {integrity: sha512-+Ui0UrfgMxOmARzpS6o5ng4zlRwp+UHOJGT+SHbeWTwgy8YOKA00Eu72cTDdfbrXa8r5AxFCXsnwpMWT2ZD1iw==}
     peerDependencies:
       '@hattip/compose': '*'
       '@types/react': '*'
@@ -784,7 +784,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001517
-      electron-to-chromium: 1.4.469
+      electron-to-chromium: 1.4.470
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: true
@@ -896,11 +896,11 @@ packages:
     dev: true
 
   /ee-first@1.1.1:
-    resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
+    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.469:
-    resolution: {integrity: sha512-HRN9XQjElxJBrdDky5iiUUr3eDwXGTg6Cp4IV8MuNc8VqMkYSneSnIe6poFKx9PsNzkudCgaWCBVxwDqirwQWQ==}
+  /electron-to-chromium@1.4.470:
+    resolution: {integrity: sha512-zZM48Lmy2FKWgqyvsX9XK+J6FfP7aCDUFLmgooLJzA7v1agCs/sxSoBpTIwDLhmbhpx9yJIxj2INig/ncjJRqg==}
     dev: true
 
   /encodeurl@1.0.2:
@@ -1017,7 +1017,7 @@ packages:
     dev: true
 
   /fresh@0.5.2:
-    resolution: {integrity: sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=}
+    resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -1131,12 +1131,12 @@ packages:
     dev: true
 
   /media-typer@0.3.0:
-    resolution: {integrity: sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=}
+    resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
     dev: true
 
   /merge-descriptors@1.0.1:
-    resolution: {integrity: sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=}
+    resolution: {integrity: sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==}
     dev: true
 
   /methods@1.1.2:
@@ -1437,7 +1437,7 @@ packages:
     dev: true
 
   /utils-merge@1.0.1:
-    resolution: {integrity: sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=}
+    resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
     dev: true
 

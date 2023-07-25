@@ -1,13 +1,13 @@
-import type { LoaderFunction } from "react-router-dom";
-import { z } from "zod";
+import type { RequestHandler } from "@hattip/compose";
 import { tinyassert } from "@hiogawa/utils";
+import { z } from "zod";
 
 const Z_PARAMS = z.object({
   prefix: z.string(),
   icon: z.string(),
 });
 
-export const loader: LoaderFunction = async (ctx) => {
+export const get: RequestHandler = async (ctx) => {
   const params = Z_PARAMS.parse(ctx.params);
   const data = await fetchIconData(params);
   const result = `\
@@ -26,7 +26,7 @@ export const loader: LoaderFunction = async (ctx) => {
       "content-type": "image/svg+xml",
     },
   });
-}
+};
 
 //
 // iconify api https://iconify.design/docs/api/icon-data.html

@@ -6,7 +6,7 @@ which makes svg color to adapt to system theme setting when it's used as browser
 ## example
 
 ```sh
-curl https://iconify-dark-hiro18181.vercel.app/icon?name=ri-code-s-slash-line
+curl https://iconify-dark-hiro18181.vercel.app/icon/ri/code-s-slash-line
 ```
 
 ```xml
