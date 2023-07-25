@@ -36,3 +36,8 @@ pnpm preview
 pnpm build-vercel-edge
 pnpm release-production
 ```
+
+## references
+
+- iconify api https://iconify.design/docs/api/icon-data.html
+- project template https://github.com/hi-ogawa/vite-plugins
