@@ -25,6 +25,9 @@ devDependencies:
   '@hiogawa/theme-script':
     specifier: ^0.0.3
     version: 0.0.3(vite@4.4.7)
+  '@hiogawa/tiny-rpc':
+    specifier: ^0.2.2
+    version: 0.2.2(zod@3.21.4)
   '@hiogawa/unocss-preset-antd':
     specifier: 2.2.1-pre.3
     version: 2.2.1-pre.3(@unocss/preset-uno@0.53.6)(unocss@0.53.6)
@@ -43,6 +46,9 @@ devDependencies:
   '@tsconfig/strictest':
     specifier: ^2.0.1
     version: 2.0.1
+  '@types/cookie':
+    specifier: ^0.5.1
+    version: 0.5.1
   '@types/express':
     specifier: ^4.17.17
     version: 4.17.17
@@ -61,6 +67,9 @@ devDependencies:
   '@vitejs/plugin-react':
     specifier: ^4.0.3
     version: 4.0.3(vite@4.4.7)
+  cookie:
+    specifier: ^0.5.0
+    version: 0.5.0
   esbuild:
     specifier: ^0.18.16
     version: 0.18.16
@@ -580,6 +589,17 @@ packages:
       vite: 4.4.7(@types/node@18.17.0)
     dev: true
 
+  /@hiogawa/tiny-rpc@0.2.2(zod@3.21.4):
+    resolution: {integrity: sha512-G+ebk/OV8/i2P/8/QSQTsn94l2gArHUZqc43CPHve4wG3AaIqo34xMgxNQax5kgbwzkK+NusPcbQxBI3mMm0dg==}
+    peerDependencies:
+      zod: '*'
+    peerDependenciesMeta:
+      zod:
+        optional: true
+    dependencies:
+      zod: 3.21.4
+    dev: true
+
   /@hiogawa/unocss-preset-antd@2.2.1-pre.3(@unocss/preset-uno@0.53.6)(unocss@0.53.6):
     resolution: {integrity: sha512-NjJ0uKIA6tqmDTXQkO52Hb83tBJjwjOCUx9cgodxiROjTCuEP+yfkmJyzMlDzfxRUl8DnHd8IijnZl2cAX7s9Q==}
     peerDependencies:
@@ -742,6 +762,10 @@ packages:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
       '@types/node': 18.17.0
+    dev: true
+
+  /@types/cookie@0.5.1:
+    resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}
     dev: true
 
   /@types/estree@1.0.1:
@@ -2222,4 +2246,3 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-    dev: false
