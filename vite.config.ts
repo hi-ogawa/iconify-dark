@@ -1,13 +1,17 @@
 import process from "node:process";
+import { themeScriptPlugin } from "@hiogawa/theme-script/dist/vite";
 import globRoutesPlugin from "@hiogawa/vite-glob-routes";
 import importIndexHtmlPlugin from "@hiogawa/vite-import-index-html";
 import vaviteConnect from "@vavite/connect";
 import react from "@vitejs/plugin-react";
+import unocss from "unocss/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig((ctx) => ({
   plugins: [
     react(),
+    unocss(),
+    themeScriptPlugin(),
     globRoutesPlugin({ root: "/src/routes" }),
     importIndexHtmlPlugin(),
     vaviteConnect({

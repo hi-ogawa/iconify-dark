@@ -23,6 +23,8 @@
     "@hattip/adapter-vercel-edge": "^0.0.34",
     "@hattip/compose": "^0.0.34",
     "@hiogawa/isort-ts": "1.0.2-pre.1",
+    "@hiogawa/theme-script": "^0.0.3",
+    "@hiogawa/unocss-preset-antd": "2.2.1-pre.3",
     "@hiogawa/utils": "1.4.2-pre.15",
     "@hiogawa/vite-glob-routes": "^0.5.0",
     "@hiogawa/vite-import-index-html": "^0.3.0",
@@ -40,6 +42,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "typescript": "^5.1.6",
+    "unocss": "^0.53.6",
     "vite": "^4.4.7"
   },
   "dependencies": {

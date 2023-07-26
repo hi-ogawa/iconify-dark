@@ -1,3 +1,4 @@
+import "virtual:uno.css";
 import { tinyassert } from "@hiogawa/utils";
 import {
   globPageRoutesClientLazy,
