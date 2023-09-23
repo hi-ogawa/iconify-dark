@@ -57,7 +57,9 @@ async function fetchIconData({ prefix, icon }: z.infer<typeof Z_PARAMS>) {
 
   const data = Z_ICONIFY_JSON.parse(await res.json());
   const dataIcon = data.icons[icon];
-  tinyassert(dataIcon, `icon not found '${icon}'`);
+  if (!dataIcon) {
+    throw new Response(`icon not found '${icon}'`, { status: 404 });
+  }
 
   return {
     meta: data,
