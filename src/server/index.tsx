@@ -1,5 +1,6 @@
 import { type RequestHandler, compose } from "@hattip/compose";
 import { tinyassert } from "@hiogawa/utils";
+import { createLoggerHandler } from "@hiogawa/utils-hattip";
 import { globApiRoutes } from "@hiogawa/vite-glob-routes/dist/hattip";
 import {
   type ServerRouterResult,
@@ -16,7 +17,7 @@ import {
 import type { Manifest } from "vite";
 
 export function createHattipApp() {
-  return compose(globApiRoutes(), ssrHandler());
+  return compose(createLoggerHandler(), globApiRoutes(), ssrHandler());
 }
 
 function ssrHandler(): RequestHandler {

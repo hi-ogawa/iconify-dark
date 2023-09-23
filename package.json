@@ -24,6 +24,7 @@
     "@hattip/compose": "^0.0.34",
     "@hiogawa/isort-ts": "1.0.2-pre.1",
     "@hiogawa/utils": "1.4.2-pre.15",
+    "@hiogawa/utils-hattip": "0.0.1-pre.1",
     "@hiogawa/vite-glob-routes": "^0.5.0",
     "@hiogawa/vite-import-index-html": "^0.3.0",
     "@tsconfig/strictest": "^2.0.1",
